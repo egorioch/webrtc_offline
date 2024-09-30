@@ -1,0 +1,54 @@
+{
+  "server": {
+    "debug": true,
+    "http_debug": false,
+    "http_demo": true,
+    "http_dir": "web",
+    "http_login": "demo",
+    "http_password": "demo",
+    "http_port": ":8083",
+    "https": false,
+    "https_auto_tls": false,
+    "https_auto_tls_name": "",
+    "https_cert": "server.crt",
+    "https_key": "server.key",
+    "https_port": ":443",
+    "ice_servers": ["stun:stun.l.google.com:19302"],
+    "log_level": "debug",
+    "rtsp_port": ":5541",
+    "token": {
+      "backend": "http://127.0.0.1/test.php"
+    },
+    "defaults": {
+      "audio": true
+    }
+  },
+  "streams": {
+    "27aec28e-6181-4753-9acd-0456a75f0289": {
+      "channels": {
+        "1": {
+          "audio": true,
+          "name": "develop_room",
+          "url": "rtsp://admin:Qwer123@192.168.9.218/cam/realmonitor?channel=1\u0026subtype=0"
+        },
+        "2": {
+          "audio": true,
+          "url": "rtsp://admin:Qwer123@192.168.9.219/cam/realmonitor?channel=1\u0026subtype=0"
+        },
+        "3": {
+          "audio": true,
+          "url": "rtsp://admin:Qwer123@192.168.9.126/cam/realmonitor?channel=1\u0026subtype=0"
+        },
+        "4": {
+          "audio": true,
+          "url": "rtsp://admin:Qwer123@192.168.9.125/cam/realmonitor?channel=1\u0026subtype=0"
+        },
+        "5": {
+          "audio": true,
+          "url": "rtsp://admin:Qwer123@192.168.9.190/cam/realmonitor?channel=1\u0026subtype=0"
+        }
+      },
+      "name": "cummunity"
+    }
+  }
+}
